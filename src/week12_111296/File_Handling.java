@@ -41,6 +41,13 @@ public class File_Handling {
 		e.printStackTrace();
 		
 	}
+	
+	File obj3 = new File("myfile.txt");
+	if(obj3.delete()) {
+		System.out.println("The deleted file is "+obj3.getName());
+	} else {
+		System.out.println("Failed in deletion");
+	}
 
 }
 }
